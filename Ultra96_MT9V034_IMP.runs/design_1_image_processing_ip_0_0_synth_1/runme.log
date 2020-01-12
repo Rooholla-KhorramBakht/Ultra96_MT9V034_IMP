@@ -1,0 +1,1535 @@
+
+*** Running vivado
+    with args -log design_1_image_processing_ip_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_image_processing_ip_0_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_image_processing_ip_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 288.301 ; gain = 60.621
+Command: synth_design -top design_1_image_processing_ip_0_0 -part xczu3eg-sbva484-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4444 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 871.324 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_image_processing_ip_0_0' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_image_processing_ip_0_0/synth/design_1_image_processing_ip_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_ip' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_ip.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Block_proc' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Block_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Block_proc.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'Block_proc' (1#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Block_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'AXIvideo2Mat' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AXIvideo2Mat.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state10 bound to: 8'b10000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AXIvideo2Mat.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'AXIvideo2Mat' (2#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-6157] synthesizing module 'CvtColor_1' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/CvtColor_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state7 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/CvtColor_1.v:88]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_bkb' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_bkb.v:14]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 22 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'image_processing_bkb_DSP48_0' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_bkb.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_bkb_DSP48_0' (3#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_bkb.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_bkb' (4#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_bkb.v:14]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_cud' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_cud.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 20 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'image_processing_cud_DSP48_1' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_cud.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_cud_DSP48_1' (5#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_cud.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_cud' (6#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_cud.v:34]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_dEe' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_dEe.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 23 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'image_processing_dEe_DSP48_2' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_dEe.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_dEe_DSP48_2' (7#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_dEe.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_dEe' (8#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_dEe.v:34]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/CvtColor_1.v:610]
+INFO: [Synth 8-6155] done synthesizing module 'CvtColor_1' (9#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/CvtColor_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'GaussianBlur' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/GaussianBlur.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/GaussianBlur.v:58]
+INFO: [Synth 8-6157] synthesizing module 'Filter2D_1' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state7 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'Filter2D_1_k_buf_eOg' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1_k_buf_eOg.v:54]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 752 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Filter2D_1_k_buf_eOg_ram' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1_k_buf_eOg.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter MEM_SIZE bound to: 752 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1_k_buf_eOg.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D_1_k_buf_eOg_ram' (10#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1_k_buf_eOg.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D_1_k_buf_eOg' (11#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1_k_buf_eOg.v:54]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_hbi' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_hbi.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_hbi' (12#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_hbi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_ibs' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_ibs.v:14]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 21 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'image_processing_ibs_DSP48_3' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_ibs.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_ibs_DSP48_3' (13#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_ibs.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_ibs' (14#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_ibs.v:14]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_jbC' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_jbC.v:40]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 24 - type: integer 
+	Parameter dout_WIDTH bound to: 25 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'image_processing_jbC_DSP48_4' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_jbC.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_jbC_DSP48_4' (15#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_jbC.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_jbC' (16#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_jbC.v:40]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_kbM' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_kbM.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 21 - type: integer 
+	Parameter dout_WIDTH bound to: 21 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'image_processing_kbM_DSP48_5' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_kbM.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_kbM_DSP48_5' (17#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_kbM.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_kbM' (18#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_kbM.v:34]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_lbW' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_lbW.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 24 - type: integer 
+	Parameter dout_WIDTH bound to: 25 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'image_processing_lbW_DSP48_6' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_lbW.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_lbW_DSP48_6' (19#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_lbW.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_lbW' (20#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_lbW.v:34]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:952]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:954]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:956]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:1036]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:1040]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:1042]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:1044]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:1050]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:1122]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:1124]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:1126]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:1148]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:1156]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:1158]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:1206]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:1232]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:1234]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D_1' (21#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'GaussianBlur' (22#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/GaussianBlur.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Duplicate' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Duplicate.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state5 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Duplicate.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'Duplicate' (23#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Duplicate.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Sobel' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Sobel.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Sobel.v:58]
+INFO: [Synth 8-6157] synthesizing module 'Filter2D' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state7 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:61]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_pcA' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_pcA.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 2 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 9 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'image_processing_pcA_DSP48_7' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_pcA.v:10]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_pcA_DSP48_7' (24#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_pcA.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_pcA' (25#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_pcA.v:34]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_qcK' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_qcK.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 2 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'image_processing_qcK_DSP48_8' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_qcK.v:10]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_qcK_DSP48_8' (26#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_qcK.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_qcK' (27#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_qcK.v:34]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:945]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:947]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:949]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1003]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1013]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1015]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1017]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1019]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1025]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1077]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1079]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1081]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1117]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1123]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1125]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1129]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1199]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1201]
+INFO: [Synth 8-6155] done synthesizing module 'Filter2D' (28#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'Sobel' (29#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Sobel.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Sobel_1' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Sobel_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Sobel_1.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'Sobel_1' (30#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Sobel_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'AddWeighted' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state38 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:67]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_rcU' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_rcU.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 8 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'image_processing_ip_ap_dadd_6_full_dsp_64' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/ip/image_processing_ip_ap_dadd_6_full_dsp_64.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 6 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at 'd:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/ip/image_processing_ip_ap_dadd_6_full_dsp_64.vhd:204]
+INFO: [Synth 8-256] done synthesizing module 'image_processing_ip_ap_dadd_6_full_dsp_64' (57#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/ip/image_processing_ip_ap_dadd_6_full_dsp_64.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_rcU' (58#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_rcU.v:11]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_sc4' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_sc4.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 8 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'image_processing_ip_ap_dmul_6_max_dsp_64' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/ip/image_processing_ip_ap_dmul_6_max_dsp_64.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 6 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at 'd:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/ip/image_processing_ip_ap_dmul_6_max_dsp_64.vhd:204]
+INFO: [Synth 8-256] done synthesizing module 'image_processing_ip_ap_dmul_6_max_dsp_64' (65#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/ip/image_processing_ip_ap_dmul_6_max_dsp_64.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_sc4' (66#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_sc4.v:11]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_tde' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_tde.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'image_processing_ip_ap_sitodp_4_no_dsp_32' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/ip/image_processing_ip_ap_sitodp_4_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at 'd:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/ip/image_processing_ip_ap_sitodp_4_no_dsp_32.vhd:199]
+INFO: [Synth 8-256] done synthesizing module 'image_processing_ip_ap_sitodp_4_no_dsp_32' (69#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/ip/image_processing_ip_ap_sitodp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_tde' (70#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_tde.v:11]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1203]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1211]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1217]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1223]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1337]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1339]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1381]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1385]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1387]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1391]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1393]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1403]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1425]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1427]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1437]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1445]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1457]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1459]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:1551]
+INFO: [Synth 8-6155] done synthesizing module 'AddWeighted' (71#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/AddWeighted.v:10]
+INFO: [Synth 8-6157] synthesizing module 'CvtColor' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/CvtColor.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state5 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/CvtColor.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'CvtColor' (72#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/CvtColor.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Mat2AXIvideo' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Mat2AXIvideo.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Mat2AXIvideo.v:77]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_dest_V_1_sel_rd_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Mat2AXIvideo.v:256]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_id_V_1_sel_rd_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Mat2AXIvideo.v:282]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_keep_V_1_sel_rd_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Mat2AXIvideo.v:308]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_strb_V_1_sel_rd_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Mat2AXIvideo.v:370]
+INFO: [Synth 8-6155] done synthesizing module 'Mat2AXIvideo' (73#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w10_d2_A' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/fifo_w10_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w10_d2_A_shiftReg' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/fifo_w10_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w10_d2_A_shiftReg' (74#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/fifo_w10_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w10_d2_A' (75#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/fifo_w10_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w11_d2_A' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/fifo_w11_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w11_d2_A_shiftReg' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/fifo_w11_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w11_d2_A_shiftReg' (76#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/fifo_w11_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w11_d2_A' (77#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/fifo_w11_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/fifo_w8_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/fifo_w8_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (78#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/fifo_w8_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (79#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/fifo_w8_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColoudo' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_CvtColoudo.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColoudo_shiftReg' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_CvtColoudo.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColoudo_shiftReg' (80#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_CvtColoudo.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColoudo' (81#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_CvtColoudo.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Gaussiavdy' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Gaussiavdy.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Gaussiavdy_shiftReg' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Gaussiavdy.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Gaussiavdy_shiftReg' (82#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Gaussiavdy.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Gaussiavdy' (83#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Gaussiavdy.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_DuplicawdI' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_DuplicawdI.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_DuplicawdI_shiftReg' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_DuplicawdI.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_DuplicawdI_shiftReg' (84#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_DuplicawdI.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_DuplicawdI' (85#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_DuplicawdI.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Sobel_U0' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Sobel_U0.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Sobel_U0_shiftReg' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Sobel_U0.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Sobel_U0_shiftReg' (86#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Sobel_U0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Sobel_U0' (87#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Sobel_U0.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Sobel_1xdS' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Sobel_1xdS.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Sobel_1xdS_shiftReg' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Sobel_1xdS.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Sobel_1xdS_shiftReg' (88#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Sobel_1xdS.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Sobel_1xdS' (89#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Sobel_1xdS.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_AddWeigyd2' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_AddWeigyd2.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_AddWeigyd2_shiftReg' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_AddWeigyd2.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_AddWeigyd2_shiftReg' (90#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_AddWeigyd2.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_AddWeigyd2' (91#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_AddWeigyd2.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColozec' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_CvtColozec.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_CvtColozec_shiftReg' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_CvtColozec.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColozec_shiftReg' (92#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_CvtColozec.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_CvtColozec' (93#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_CvtColozec.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIAem' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Mat2AXIAem.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIAem_shiftReg' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Mat2AXIAem.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIAem_shiftReg' (94#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Mat2AXIAem.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIAem' (95#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/start_for_Mat2AXIAem.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_ip' (96#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_ip.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_image_processing_ip_0_0' (97#1) [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_image_processing_ip_0_0/synth/design_1_image_processing_ip_0_0.v:58]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized118 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized118 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized118 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized118 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized118 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized120 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized120 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized120 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized10 has unconnected port B[31]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized91 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized91 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized91 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized75 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized75 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized75 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized75 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized75 has unconnected port SINIT
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[30]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[29]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[28]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[27]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[26]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[25]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[24]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[23]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[22]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[21]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[20]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[19]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[18]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[17]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[16]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[15]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[14]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[13]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[12]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[11]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[10]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[9]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[8]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[7]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[6]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[5]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[4]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[3]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[2]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[1]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized130 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized130 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized130 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized130 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized130 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized14 has unconnected port B[26]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized128 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized128 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized128 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized128 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized128 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized71 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized71 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized71 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized71 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized71 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized1 has unconnected port NORMALIZE[1]
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized1 has unconnected port FIXED_POINT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized1 has unconnected port FIX_MANT_SIGN
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized1 has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized61 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized61 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized61 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized61 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized61 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized126 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized126 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized126 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized126 has unconnected port SSET
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 871.324 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 871.324 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 871.324 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1146 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_image_processing_ip_0_0/constraints/image_processing_ip_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_image_processing_ip_0_0/constraints/image_processing_ip_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/design_1_image_processing_ip_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/design_1_image_processing_ip_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 98 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 28 instances
+  FDE => FDRE: 70 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.335 . Memory (MB): peak = 1510.172 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:00 ; elapsed = 00:01:09 . Memory (MB): peak = 1510.172 ; gain = 638.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:00 ; elapsed = 00:01:09 . Memory (MB): peak = 1510.172 ; gain = 638.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/design_1_image_processing_ip_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:09 . Memory (MB): peak = 1510.172 ; gain = 638.848
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_4_addr_reg_1494_reg[9:0]' into 'k_buf_0_val_3_addr_reg_1488_reg[9:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:328]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_5_addr_reg_1500_reg[9:0]' into 'k_buf_0_val_3_addr_reg_1488_reg[9:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:344]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_4_addr_reg_1494_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:328]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_5_addr_reg_1500_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:344]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond389_i_fu_320_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Range1_all_zeros_fu_1279_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond388_i_fu_612_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_2_fu_360_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_562_1_fu_366_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond3_fu_140_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_152_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_4_addr_reg_1467_reg[9:0]' into 'k_buf_0_val_3_addr_reg_1461_reg[9:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:335]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_5_addr_reg_1473_reg[9:0]' into 'k_buf_0_val_3_addr_reg_1461_reg[9:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:351]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_4_addr_reg_1467_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:335]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_5_addr_reg_1473_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:351]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond389_i_fu_372_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond388_i_fu_664_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_2_fu_412_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_419_1_fu_418_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element src_kernel_win_0_va_18_fu_164_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:637]
+WARNING: [Synth 8-6014] Unused sequential element src_kernel_win_0_va_19_fu_168_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:638]
+WARNING: [Synth 8-6014] Unused sequential element src_kernel_win_0_va_20_fu_172_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:639]
+WARNING: [Synth 8-6014] Unused sequential element src_kernel_win_0_va_fu_160_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:637]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1041]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1041]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1057]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1057]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:991]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:991]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_1_cast_reg_1363_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:558]
+WARNING: [Synth 8-6014] Unused sequential element OP2_V_2_cast_reg_1373_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:560]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond4_i_fu_224_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_i_fu_236_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Range1_all_zeros_1_fu_696_p2" won't be mapped to RAM because address size (54) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "icmp_fu_383_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_25_i_fu_684_p2" won't be mapped to RAM because address size (54) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "tmp_3_i_fu_319_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_9_i_fu_295_p2" won't be mapped to RAM because address size (63) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "tmp_i_i_i_i_fu_273_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond1_fu_164_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_176_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond2_fu_204_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_216_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_228_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:08 ; elapsed = 00:01:19 . Memory (MB): peak = 1510.172 ; gain = 638.848
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized13) to 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized13) to 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/SUB_DELAY' (delay__parameterized0) to 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/SUBTRACT_PREADD_DEL'
+INFO: [Synth 8-223] decloning instance 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized13) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized13) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_INC_DELAY' (delay__parameterized0) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized43) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized43) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized13) to 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized13) to 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized13) to 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized13) to 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized13) to 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized13) to 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized13) to 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_DEL' (delay__parameterized7) to 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized75) to 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized75) to 'image_processing_tde:/image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "data41" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element r_V_4_i_i_reg_390_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/CvtColor_1.v:191]
+WARNING: [Synth 8-6014] Unused sequential element tmp_85_reg_385_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/CvtColor_1.v:335]
+WARNING: [Synth 8-6014] Unused sequential element tmp_84_reg_380_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/CvtColor_1.v:334]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_cud.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_dEe.v:26]
+INFO: [Synth 8-5546] ROM "grp_Filter2D_1_fu_40/exitcond389_i_fu_320_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_1_fu_40/exitcond388_i_fu_612_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_1_fu_40/tmp_562_1_fu_366_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_1_fu_40/tmp_2_fu_360_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_1_fu_40/r_V_10_1_1_reg_1528_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:484]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_1_fu_40/src_kernel_win_0_va_5_fu_188_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:657]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_1_fu_40/src_kernel_win_0_va_1_fu_172_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:654]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_jbC.v:31]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_jbC.v:31]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_jbC.v:31]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_kbM.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_kbM.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D_1.v:670]
+INFO: [Synth 8-5546] ROM "exitcond3_fu_140_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_152_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[9:0]' into 'grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[9:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:560]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[10:0]' into 'grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[10:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:558]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/OP2_V_2_1_cast_reg_1378_reg[2:0]' into 'grp_Filter2D_fu_52/OP2_V_2_1_cast_reg_1378_reg[2:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:559]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_24_reg_1490_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_24_reg_1490_reg[7:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:654]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[7:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:637]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:560]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:558]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_24_reg_1490_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:654]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1057]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:991]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1057]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:991]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:637]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_52/exitcond388_i_fu_664_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_52/exitcond389_i_fu_372_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_52/tmp_419_1_fu_418_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_52/tmp_2_fu_412_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/p_Val2_89_0_1_reg_1501_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:477]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/OP2_V_0_2_cast_reg_1358_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:556]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_25_reg_1496_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:655]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/OP2_V_0_1_cast_reg_1353_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:555]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_22_fu_180_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:647]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:477]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_qcK.v:26]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[9:0]' into 'grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[9:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:560]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[10:0]' into 'grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[10:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:558]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/OP2_V_2_1_cast_reg_1378_reg[2:0]' into 'grp_Filter2D_fu_52/OP2_V_2_1_cast_reg_1378_reg[2:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:559]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_24_reg_1490_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_24_reg_1490_reg[7:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:654]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[7:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:637]
+INFO: [Synth 8-4471] merging register 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' into 'grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg[7:0]' [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:560]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:558]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_24_reg_1490_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:654]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1057]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:991]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:1057]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:991]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:637]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_23_reg_1483_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:653]
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_52/exitcond388_i_fu_664_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_52/exitcond389_i_fu_372_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_52/tmp_419_1_fu_418_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_52/tmp_2_fu_412_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/p_Val2_89_0_1_reg_1501_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:477]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/OP2_V_0_2_cast_reg_1358_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:556]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_25_reg_1496_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:655]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/OP2_V_0_1_cast_reg_1353_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:555]
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_52/src_kernel_win_0_va_22_fu_180_reg was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:647]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/Filter2D.v:477]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ipshared/77bf/hdl/verilog/image_processing_qcK.v:26]
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_i_fu_236_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond4_i_fu_224_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_i_i_i_i_fu_273_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_9_i_fu_295_p2" won't be mapped to RAM because address size (63) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "tmp_3_i_fu_319_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_fu_383_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_25_i_fu_684_p2" won't be mapped to RAM because address size (54) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Range1_all_zeros_1_fu_696_p2" won't be mapped to RAM because address size (54) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "exitcond_fu_176_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond1_fu_164_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_216_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond2_fu_204_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_228_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/A_IN_DELAY/i_pipe/opt_has_pipe.first_q_reg[18]' (FDE) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/B_IN_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_INC_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/EXP/NORMALIZE_UP_DEL/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[2]' (FDE) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[3]' (FDE) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[4]' (FDE) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[5]' (FDE) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[6]' (FDE) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[7]' (FDE) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[8]'
+INFO: [Synth 8-3886] merging instance 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'image_processing_sc4:/image_processing_ip_ap_dmul_6_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (image_processing_sc4:/\image_processing_ip_ap_dmul_6_max_dsp_64_u/U0 /i_synth/\MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[9] )
+INFO: [Synth 8-3886] merging instance 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[0].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[14]' (FDE) to 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/ALIGN_BLK/ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[0].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'image_processing_rcU:/image_processing_ip_ap_dadd_6_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/EXP_INC_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (image_processing_rcU:/\image_processing_ip_ap_dadd_6_full_dsp_64_u/U0 /i_synth/\ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/EXP_INC_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/k_buf_0_val_3_addr_reg_1461_reg[0]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/tmp_69_reg_1449_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/k_buf_0_val_3_addr_reg_1461_reg[1]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/tmp_69_reg_1449_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/k_buf_0_val_3_addr_reg_1461_reg[0]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/tmp_69_reg_1449_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/k_buf_0_val_3_addr_reg_1461_reg[1]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/tmp_69_reg_1449_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/k_buf_0_val_3_addr_reg_1488_reg[0]' (FDE) to 'inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/tmp_43_reg_1476_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/k_buf_0_val_3_addr_reg_1488_reg[1]' (FDE) to 'inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/tmp_43_reg_1476_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/row_assign_13_2_t_reg_1458_reg[0]' (FDE) to 'inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/row_assign_13_0_t_reg_1448_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/row_assign_10_2_t_reg_1431_reg[0]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/row_assign_10_0_t_reg_1421_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/A[0]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/A[1]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/A[2]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/A[3]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/A[4]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/A[5]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/A[7]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/A[6]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/row_assign_10_2_t_reg_1431_reg[0]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/row_assign_10_0_t_reg_1421_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/A[0]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/A[1]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/A[2]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/A[3]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/A[4]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/A[5]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/A[7]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/A[6]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/src_kernel_win_0_va_fu_160_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_2_cast_reg_1368_reg[1]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[3]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[4]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[5]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[6]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[7]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[8]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[9]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[10]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[2]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[3]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[4]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[5]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[6]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[7]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[8]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[9]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_2_cast_reg_1368_reg[2]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_2_cast_reg_1368_reg[3]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_2_cast_reg_1368_reg[0]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_2_1_cast_reg_1378_reg[0]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_2_1_cast_reg_1378_reg[1]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_2_1_cast_reg_1378_reg[2]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Sobel_U0/\grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[2]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[0]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/Sobel_U0/\grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_2_cast_reg_1368_reg[1]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[3]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[4]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[5]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[6]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[7]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[8]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[9]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[10]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[2]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[3]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[4]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[5]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[6]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[7]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[8]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[9]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_2_cast_reg_1368_reg[2]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_2_cast_reg_1368_reg[3]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_2_cast_reg_1368_reg[0]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_2_1_cast_reg_1378_reg[0]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_2_1_cast_reg_1378_reg[1]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_2_1_cast_reg_1378_reg[2]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[1]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[2]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/Sobel_1_U0/\grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Sobel_1_U0/\grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/AddWeighted_U0/F2_reg_1048_reg[0]' (FDE) to 'inst/AddWeighted_U0/tmp_2_i_reg_1064_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_U0/grp_Filter2D_fu_52/tmp_39_reg_1517_reg[3]' (FDE) to 'inst/Sobel_U0/grp_Filter2D_fu_52/isneg_reg_1506_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Sobel_1_U0/grp_Filter2D_fu_52/tmp_39_reg_1517_reg[3]' (FDE) to 'inst/Sobel_1_U0/grp_Filter2D_fu_52/isneg_reg_1506_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Block_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/cols_V_reg_484_reg[10]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_484_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/cols_V_reg_484_reg[11]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_484_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/cols_V_reg_484_reg[12]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_484_reg[13]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Sobel_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_1_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Duplicate_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/GaussianBlur_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Sobel_1_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AXIvideo2Mat_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\Block_proc_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Mat2AXIvideo_U0/ap_done_reg_reg)
+WARNING: [Synth 8-3332] Sequential element (ap_done_reg_reg) is unused and will be removed from module AXIvideo2Mat.
+WARNING: [Synth 8-3332] Sequential element (ap_done_reg_reg) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[28]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[27]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[26]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[25]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[24]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[23]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[22]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[21]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[20]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[19]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[18]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[17]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[16]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[15]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[14]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[13]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[12]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[11]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[10]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[9]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[8]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[7]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[6]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[5]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[4]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[3]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[2]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[1]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (r_V_1_reg_395_reg[0]) is unused and will be removed from module CvtColor_1.
+WARNING: [Synth 8-3332] Sequential element (ap_done_reg_reg) is unused and will be removed from module GaussianBlur.
+WARNING: [Synth 8-3332] Sequential element (ap_done_reg_reg) is unused and will be removed from module Duplicate.
+WARNING: [Synth 8-3332] Sequential element (ap_done_reg_reg) is unused and will be removed from module Sobel.
+WARNING: [Synth 8-3332] Sequential element (grp_Filter2D_fu_52/OP2_V_1_cast_reg_1363_reg[0]) is unused and will be removed from module Sobel.
+WARNING: [Synth 8-3332] Sequential element (grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[1]) is unused and will be removed from module Sobel.
+WARNING: [Synth 8-3332] Sequential element (grp_Filter2D_fu_52/row_assign_10_1_t_reg_1426_reg[1]) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (grp_Filter2D_fu_52/row_assign_10_1_t_reg_1426_reg[0]) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (grp_Filter2D_fu_52/src_kernel_win_0_va_24_reg_1490_reg[7]) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (grp_Filter2D_fu_52/src_kernel_win_0_va_24_reg_1490_reg[6]) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (grp_Filter2D_fu_52/src_kernel_win_0_va_24_reg_1490_reg[5]) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (grp_Filter2D_fu_52/src_kernel_win_0_va_24_reg_1490_reg[4]) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (grp_Filter2D_fu_52/src_kernel_win_0_va_24_reg_1490_reg[3]) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (grp_Filter2D_fu_52/src_kernel_win_0_va_24_reg_1490_reg[2]) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (grp_Filter2D_fu_52/src_kernel_win_0_va_24_reg_1490_reg[1]) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (grp_Filter2D_fu_52/src_kernel_win_0_va_24_reg_1490_reg[0]) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[7]__1) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[6]__1) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[5]__1) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[4]__1) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[3]__1) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[2]__1) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[1]__1) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[0]__1) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[7]__2) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[6]__2) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[5]__2) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[4]__2) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[3]__2) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[2]__2) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[1]__2) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (A[0]__2) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (ap_done_reg_reg) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[0]) is unused and will be removed from module Sobel_1.
+WARNING: [Synth 8-3332] Sequential element (grp_Filter2D_fu_52/OP2_V_2_cast_reg_1373_reg[1]) is unused and will be removed from module Sobel_1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/NORM/ROUND/EXP_INC_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/OP/FLAGS_REG.IV_OP_REG/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/OP/FLAGS_REG.NOT_LATE_UPDATE_GEN.UNDERFLOW_reg) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/OP/FLAGS_REG.NOT_LATE_UPDATE_GEN.OVERFLOW_reg) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL/i_pipe/opt_has_pipe.first_q_reg[9]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv__parameterized3.
+WARNING: [Synth 8-3332] Sequential element (ap_done_reg_reg) is unused and will be removed from module AddWeighted.
+WARNING: [Synth 8-3332] Sequential element (F2_2_reg_1082_reg[11]) is unused and will be removed from module AddWeighted.
+WARNING: [Synth 8-3332] Sequential element (F2_2_reg_1082_reg[10]) is unused and will be removed from module AddWeighted.
+WARNING: [Synth 8-3332] Sequential element (F2_2_reg_1082_reg[9]) is unused and will be removed from module AddWeighted.
+WARNING: [Synth 8-3332] Sequential element (F2_2_reg_1082_reg[8]) is unused and will be removed from module AddWeighted.
+WARNING: [Synth 8-3332] Sequential element (ap_done_reg_reg) is unused and will be removed from module CvtColor.
+WARNING: [Synth 8-3332] Sequential element (ap_done_reg_reg) is unused and will be removed from module Mat2AXIvideo.
+WARNING: [Synth 8-3332] Sequential element (Block_proc_U0/ap_done_reg_reg) is unused and will be removed from module image_processing_ip.
+WARNING: [Synth 8-3332] Sequential element (Block_proc_U0/ap_CS_fsm_reg[0]) is unused and will be removed from module image_processing_ip.
+WARNING: [Synth 8-3332] Sequential element (start_for_CvtColoudo_U/U_start_for_CvtColoudo_ram/SRL_SIG_reg[0][0]) is unused and will be removed from module image_processing_ip.
+WARNING: [Synth 8-3332] Sequential element (start_for_CvtColoudo_U/U_start_for_CvtColoudo_ram/SRL_SIG_reg[1][0]) is unused and will be removed from module image_processing_ip.
+WARNING: [Synth 8-3332] Sequential element (start_for_Gaussiavdy_U/U_start_for_Gaussiavdy_ram/SRL_SIG_reg[0][0]) is unused and will be removed from module image_processing_ip.
+WARNING: [Synth 8-3332] Sequential element (start_for_Gaussiavdy_U/U_start_for_Gaussiavdy_ram/SRL_SIG_reg[1][0]) is unused and will be removed from module image_processing_ip.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/image_processing_tde_U79/\din0_buf1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/image_processing_tde_U78/\din0_buf1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/AddWeighted_U0/image_processing_sc4_U77/\din1_buf1_reg[61] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/AddWeighted_U0/image_processing_sc4_U76/\din1_buf1_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/image_processing_sc4_U77/\din1_buf1_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/image_processing_sc4_U76/\din1_buf1_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/image_processing_rcU_U75/\din1_buf1_reg[62] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/img_0_cols_V_c_U/\U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/img_0_cols_V_c_U/\U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/img_0_rows_V_c_U/\U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/img_0_rows_V_c_U/\U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/image_processing_tde_U79/\image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/image_processing_tde_U78/\image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/image_processing_sc4_U77/\image_processing_ip_ap_dmul_6_max_dsp_64_u/U0 /i_synth/\MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/B_IN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/image_processing_sc4_U76/\image_processing_ip_ap_dmul_6_max_dsp_64_u/U0 /i_synth/\MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/B_IN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/image_processing_rcU_U75/\image_processing_ip_ap_dadd_6_full_dsp_64_u/U0 /i_synth/\ADDSUB_OP.ADDSUB/SPEED_OP.LOGIC.OP/EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/img_0_cols_V_c_U/\U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/img_0_cols_V_c_U/\U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/img_0_rows_V_c_U/\U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/img_0_rows_V_c_U/\U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/image_processing_tde_U79/\image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/image_processing_tde_U78/\image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/img_0_cols_V_c21_U/\U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/img_0_cols_V_c21_U/\U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/img_0_rows_V_c20_U/\U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/img_0_rows_V_c20_U/\U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/AXIvideo2Mat_U0/\rows_V_reg_479_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AXIvideo2Mat_U0/\rows_V_reg_479_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/image_processing_tde_U79/\image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/AddWeighted_U0/image_processing_tde_U78/\image_processing_ip_ap_sitodp_4_no_dsp_32_u/U0 /i_synth/\FIX_TO_FLT_OP.SPD.OP/EXP/a_is_signed.IP_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/img_0_cols_V_c21_U/\U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/img_0_cols_V_c21_U/\U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/img_0_rows_V_c20_U/\U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/img_0_rows_V_c20_U/\U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/CvtColor_1_U0/\p_src_rows_V_read_reg_357_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/CvtColor_1_U0/\p_src_rows_V_read_reg_357_reg[9] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:15 . Memory (MB): peak = 1510.172 ; gain = 638.848
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/GaussianBlur_U0/i_2_0/grp_Filter2D_1_fu_40/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/GaussianBlur_U0/i_2_1/grp_Filter2D_1_fu_40/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/GaussianBlur_U0/i_2_4/grp_Filter2D_1_fu_40/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/Sobel_U0/i_2_0/grp_Filter2D_fu_52/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/Sobel_U0/i_2_1/grp_Filter2D_fu_52/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/Sobel_U0/i_2_4/grp_Filter2D_fu_52/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/Sobel_1_U0/i_2_0/grp_Filter2D_fu_52/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/Sobel_1_U0/i_2_2/grp_Filter2D_fu_52/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/Sobel_1_U0/i_2_5/grp_Filter2D_fu_52/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:20 ; elapsed = 00:02:37 . Memory (MB): peak = 1883.418 ; gain = 1012.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:23 ; elapsed = 00:02:40 . Memory (MB): peak = 1910.492 ; gain = 1039.168
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/GaussianBlur_U0/grp_Filter2D_1_fu_40/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/Sobel_U0/grp_Filter2D_fu_52/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/Sobel_U0/grp_Filter2D_fu_52/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/Sobel_U0/grp_Filter2D_fu_52/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/Sobel_1_U0/grp_Filter2D_fu_52/k_buf_0_val_3_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/Sobel_1_U0/grp_Filter2D_fu_52/k_buf_0_val_4_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/Sobel_1_U0/grp_Filter2D_fu_52/k_buf_0_val_5_U/Filter2D_1_k_buf_eOg_ram_U/ram_reg_bram_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:30 ; elapsed = 00:02:47 . Memory (MB): peak = 1983.203 ; gain = 1111.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:32 ; elapsed = 00:02:49 . Memory (MB): peak = 1983.203 ; gain = 1111.879
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:33 ; elapsed = 00:02:49 . Memory (MB): peak = 1983.203 ; gain = 1111.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:35 ; elapsed = 00:02:52 . Memory (MB): peak = 1983.203 ; gain = 1111.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:35 ; elapsed = 00:02:52 . Memory (MB): peak = 1983.203 ; gain = 1111.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:35 ; elapsed = 00:02:52 . Memory (MB): peak = 1983.203 ; gain = 1111.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:35 ; elapsed = 00:02:52 . Memory (MB): peak = 1983.203 ; gain = 1111.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |CARRY8            |    70|
+|2     |DSP48E1           |    28|
+|3     |DSP_ALU           |     1|
+|4     |DSP_ALU_1         |    10|
+|5     |DSP_A_B_DATA      |     1|
+|6     |DSP_A_B_DATA_1    |     2|
+|7     |DSP_A_B_DATA_2    |     1|
+|8     |DSP_A_B_DATA_3    |     5|
+|9     |DSP_A_B_DATA_4    |     1|
+|10    |DSP_A_B_DATA_5    |     1|
+|11    |DSP_C_DATA        |     7|
+|12    |DSP_C_DATA_1      |     4|
+|13    |DSP_MULTIPLIER    |    10|
+|14    |DSP_MULTIPLIER_1  |     1|
+|15    |DSP_M_DATA        |     1|
+|16    |DSP_M_DATA_1      |    10|
+|17    |DSP_OUTPUT        |     7|
+|18    |DSP_OUTPUT_1      |     4|
+|19    |DSP_PREADD        |    11|
+|20    |DSP_PREADD_DATA   |    10|
+|21    |DSP_PREADD_DATA_1 |     1|
+|22    |LUT1              |   160|
+|23    |LUT2              |   379|
+|24    |LUT3              |   972|
+|25    |LUT4              |   650|
+|26    |LUT5              |   696|
+|27    |LUT6              |  1796|
+|28    |MUXCY             |   576|
+|29    |MUXF7             |    12|
+|30    |MUXF8             |     2|
+|31    |RAMB18E2          |     9|
+|32    |SRL16E            |    70|
+|33    |XORCY             |   348|
+|34    |FDE               |    70|
+|35    |FDRE              |  4192|
+|36    |FDSE              |    86|
++------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:35 ; elapsed = 00:02:52 . Memory (MB): peak = 1983.203 ; gain = 1111.879
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 489 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:40 ; elapsed = 00:02:22 . Memory (MB): peak = 1983.203 ; gain = 473.031
+Synthesis Optimization Complete : Time (s): cpu = 00:02:35 ; elapsed = 00:02:52 . Memory (MB): peak = 1983.203 ; gain = 1111.879
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1117 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 223 instances were transformed.
+  (CARRY4) => CARRY8: 114 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 28 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 11 instances
+  FDE => FDRE: 70 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+537 Infos, 309 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:44 ; elapsed = 00:03:02 . Memory (MB): peak = 1992.613 ; gain = 1121.289
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/design_1_image_processing_ip_0_0_synth_1/design_1_image_processing_ip_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_image_processing_ip_0_0/design_1_image_processing_ip_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 529 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/design_1_image_processing_ip_0_0_synth_1/design_1_image_processing_ip_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_image_processing_ip_0_0_utilization_synth.rpt -pb design_1_image_processing_ip_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 1992.613 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  9 23:06:14 2020...

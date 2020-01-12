@@ -1,0 +1,331 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'color_convert'" level="0">
+<item name = "Date">Fri Oct 11 11:34:06 2019
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">color_convert</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">7.00</item>
+<item name = "Clock uncertainty (ns)">0.88</item>
+<item name = "Target initiation interval">1</item>
+<item name = "Estimated clock period (ns)">5.698</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">4, 4, 1, 1, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, 6, -, -, -</column>
+<column name="Expression">-, 0, 0, 590, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">0, -, 222, 280, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 162, -</column>
+<column name="Register">0, -, 541, 64, -</column>
+<specialColumn name="Available">432, 360, 141120, 70560, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 1, ~0, 1, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="color_convert_AXILiteS_s_axi_U">color_convert_AXILiteS_s_axi, 0, 0, 222, 280</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="color_convert_macbkb_U1">color_convert_macbkb, i0 + i1 * i2</column>
+<column name="color_convert_macbkb_U2">color_convert_macbkb, i0 + i1 * i2</column>
+<column name="color_convert_macbkb_U3">color_convert_macbkb, i0 + i1 * i2</column>
+<column name="color_convert_maccud_U4">color_convert_maccud, i0 * i1 + i2</column>
+<column name="color_convert_maccud_U5">color_convert_maccud, i0 * i1 + i2</column>
+<column name="color_convert_maccud_U6">color_convert_maccud, i0 * i1 + i2</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="p_Val2_16_fu_291_p2">*, 0, 0, 62, 8, 10</column>
+<column name="p_Val2_1_fu_255_p2">*, 0, 0, 62, 8, 10</column>
+<column name="p_Val2_9_fu_273_p2">*, 0, 0, 62, 8, 10</column>
+<column name="p_Val2_13_fu_448_p2">+, 0, 0, 27, 20, 20</column>
+<column name="p_Val2_15_fu_490_p2">+, 0, 0, 15, 8, 8</column>
+<column name="p_Val2_21_fu_575_p2">+, 0, 0, 27, 20, 20</column>
+<column name="p_Val2_23_fu_617_p2">+, 0, 0, 15, 8, 8</column>
+<column name="p_Val2_5_fu_321_p2">+, 0, 0, 27, 20, 20</column>
+<column name="p_Val2_7_fu_363_p2">+, 0, 0, 15, 8, 8</column>
+<column name="brmerge_i_i463_not_fu_763_p2">and, 0, 0, 2, 1, 1</column>
+<column name="brmerge_i_i484_not_fu_821_p2">and, 0, 0, 2, 1, 1</column>
+<column name="brmerge_i_i_not_fu_705_p2">and, 0, 0, 2, 1, 1</column>
+<column name="carry_1_fu_510_p2">and, 0, 0, 2, 1, 1</column>
+<column name="carry_2_fu_637_p2">and, 0, 0, 2, 1, 1</column>
+<column name="carry_fu_383_p2">and, 0, 0, 2, 1, 1</column>
+<column name="neg_src_6_fu_748_p2">and, 0, 0, 2, 1, 1</column>
+<column name="neg_src_7_fu_806_p2">and, 0, 0, 2, 1, 1</column>
+<column name="neg_src_fu_690_p2">and, 0, 0, 2, 1, 1</column>
+<column name="p_38_i1_fu_546_p2">and, 0, 0, 2, 1, 1</column>
+<column name="p_38_i2_fu_673_p2">and, 0, 0, 2, 1, 1</column>
+<column name="p_38_i_fu_419_p2">and, 0, 0, 2, 1, 1</column>
+<column name="stream_in_24_data_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="stream_in_24_data_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="stream_in_24_last_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="stream_in_24_last_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="stream_in_24_user_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="stream_in_24_user_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="stream_out_24_data_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="stream_out_24_data_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="stream_out_24_last_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="stream_out_24_last_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="stream_out_24_user_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="stream_out_24_user_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="Range1_all_ones_1_fu_526_p2">icmp, 0, 0, 9, 4, 2</column>
+<column name="Range1_all_ones_2_fu_653_p2">icmp, 0, 0, 9, 4, 2</column>
+<column name="Range1_all_ones_fu_399_p2">icmp, 0, 0, 9, 4, 2</column>
+<column name="Range1_all_zeros_1_fu_532_p2">icmp, 0, 0, 9, 4, 1</column>
+<column name="Range1_all_zeros_2_fu_659_p2">icmp, 0, 0, 9, 4, 1</column>
+<column name="Range1_all_zeros_fu_405_p2">icmp, 0, 0, 9, 4, 1</column>
+<column name="stream_in_24_data_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="stream_in_24_last_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="stream_in_24_user_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="stream_out_24_data_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="stream_out_24_last_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="stream_out_24_user_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="ap_block_pp0_stage0_01001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage0_11001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state5_pp0_stage0_iter4">or, 0, 0, 2, 1, 1</column>
+<column name="brmerge1_fu_773_p2">or, 0, 0, 2, 1, 1</column>
+<column name="brmerge2_fu_831_p2">or, 0, 0, 2, 1, 1</column>
+<column name="brmerge_fu_715_p2">or, 0, 0, 2, 1, 1</column>
+<column name="neg_src_5_not_fu_700_p2">or, 0, 0, 2, 1, 1</column>
+<column name="neg_src_6_not_fu_816_p2">or, 0, 0, 2, 1, 1</column>
+<column name="neg_src_not_fu_758_p2">or, 0, 0, 2, 1, 1</column>
+<column name="p_39_demorgan_i1_fu_552_p2">or, 0, 0, 2, 1, 1</column>
+<column name="p_39_demorgan_i2_fu_679_p2">or, 0, 0, 2, 1, 1</column>
+<column name="p_39_demorgan_i_fu_425_p2">or, 0, 0, 2, 1, 1</column>
+<column name="deleted_zeros_1_fu_538_p3">select, 0, 0, 2, 1, 1</column>
+<column name="deleted_zeros_2_fu_665_p3">select, 0, 0, 2, 1, 1</column>
+<column name="deleted_zeros_fu_411_p3">select, 0, 0, 2, 1, 1</column>
+<column name="out1_V_fu_735_p3">select, 0, 0, 8, 1, 8</column>
+<column name="out2_V_fu_793_p3">select, 0, 0, 8, 1, 8</column>
+<column name="out3_V_fu_851_p3">select, 0, 0, 8, 1, 8</column>
+<column name="p_1_fu_786_p3">select, 0, 0, 8, 1, 1</column>
+<column name="p_2_fu_844_p3">select, 0, 0, 8, 1, 1</column>
+<column name="p_mux1_fu_779_p3">select, 0, 0, 8, 1, 8</column>
+<column name="p_mux2_fu_837_p3">select, 0, 0, 8, 1, 8</column>
+<column name="p_mux_fu_721_p3">select, 0, 0, 8, 1, 8</column>
+<column name="p_s_fu_728_p3">select, 0, 0, 8, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="p_39_demorgan_i461_no_fu_768_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="p_39_demorgan_i482_no_fu_826_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="p_39_demorgan_i_not_fu_710_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="signbit_1_not_fu_753_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="signbit_2_not_fu_811_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="signbit_not_fu_695_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="tmp_14_fu_504_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="tmp_16_fu_743_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="tmp_23_fu_631_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="tmp_25_fu_801_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="tmp_5_fu_377_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="tmp_8_fu_685_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="stream_in_24_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="stream_in_24_data_0_data_out">9, 2, 24, 48</column>
+<column name="stream_in_24_data_0_state">15, 3, 2, 6</column>
+<column name="stream_in_24_last_V_0_data_out">9, 2, 1, 2</column>
+<column name="stream_in_24_last_V_0_state">15, 3, 2, 6</column>
+<column name="stream_in_24_user_V_0_data_out">9, 2, 1, 2</column>
+<column name="stream_in_24_user_V_0_state">15, 3, 2, 6</column>
+<column name="stream_out_24_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="stream_out_24_data_1_data_out">9, 2, 24, 48</column>
+<column name="stream_out_24_data_1_state">15, 3, 2, 6</column>
+<column name="stream_out_24_last_V_1_data_out">9, 2, 1, 2</column>
+<column name="stream_out_24_last_V_1_state">15, 3, 2, 6</column>
+<column name="stream_out_24_user_V_1_data_out">9, 2, 1, 2</column>
+<column name="stream_out_24_user_V_1_state">15, 3, 2, 6</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
+<column name="bias_c1_V_0_data_reg">10, 0, 10, 0</column>
+<column name="bias_c1_V_0_vld_reg">0, 0, 1, 1</column>
+<column name="bias_c1_V_read_reg_934">10, 0, 10, 0</column>
+<column name="bias_c2_V_0_data_reg">10, 0, 10, 0</column>
+<column name="bias_c2_V_0_vld_reg">0, 0, 1, 1</column>
+<column name="bias_c2_V_read_reg_929">10, 0, 10, 0</column>
+<column name="bias_c3_V_0_data_reg">10, 0, 10, 0</column>
+<column name="bias_c3_V_0_vld_reg">0, 0, 1, 1</column>
+<column name="bias_c3_V_read_reg_924">10, 0, 10, 0</column>
+<column name="c1_c1_V_0_data_reg">10, 0, 10, 0</column>
+<column name="c1_c1_V_0_vld_reg">0, 0, 1, 1</column>
+<column name="c1_c2_V_0_data_reg">10, 0, 10, 0</column>
+<column name="c1_c2_V_0_vld_reg">0, 0, 1, 1</column>
+<column name="c1_c3_V_0_data_reg">10, 0, 10, 0</column>
+<column name="c1_c3_V_0_vld_reg">0, 0, 1, 1</column>
+<column name="c1_c3_V_read_reg_949">10, 0, 10, 0</column>
+<column name="c2_c1_V_0_data_reg">10, 0, 10, 0</column>
+<column name="c2_c1_V_0_vld_reg">0, 0, 1, 1</column>
+<column name="c2_c2_V_0_data_reg">10, 0, 10, 0</column>
+<column name="c2_c2_V_0_vld_reg">0, 0, 1, 1</column>
+<column name="c2_c3_V_0_data_reg">10, 0, 10, 0</column>
+<column name="c2_c3_V_0_vld_reg">0, 0, 1, 1</column>
+<column name="c2_c3_V_read_reg_944">10, 0, 10, 0</column>
+<column name="c3_c1_V_0_data_reg">10, 0, 10, 0</column>
+<column name="c3_c1_V_0_vld_reg">0, 0, 1, 1</column>
+<column name="c3_c2_V_0_data_reg">10, 0, 10, 0</column>
+<column name="c3_c2_V_0_vld_reg">0, 0, 1, 1</column>
+<column name="c3_c3_V_0_data_reg">10, 0, 10, 0</column>
+<column name="c3_c3_V_0_vld_reg">0, 0, 1, 1</column>
+<column name="c3_c3_V_read_reg_939">10, 0, 10, 0</column>
+<column name="loc_V_2_reg_964">8, 0, 8, 0</column>
+<column name="p_38_i1_reg_1020">1, 0, 1, 0</column>
+<column name="p_38_i2_reg_1044">1, 0, 1, 0</column>
+<column name="p_38_i_reg_996">1, 0, 1, 0</column>
+<column name="p_39_demorgan_i1_reg_1026">1, 0, 1, 0</column>
+<column name="p_39_demorgan_i2_reg_1050">1, 0, 1, 0</column>
+<column name="p_39_demorgan_i_reg_1002">1, 0, 1, 0</column>
+<column name="p_Val2_11_reg_974">19, 0, 19, 0</column>
+<column name="p_Val2_15_reg_1014">8, 0, 8, 0</column>
+<column name="p_Val2_19_reg_979">19, 0, 19, 0</column>
+<column name="p_Val2_23_reg_1038">8, 0, 8, 0</column>
+<column name="p_Val2_2_reg_969">19, 0, 19, 0</column>
+<column name="p_Val2_7_reg_990">8, 0, 8, 0</column>
+<column name="signbit_1_reg_1008">1, 0, 1, 0</column>
+<column name="signbit_2_reg_1032">1, 0, 1, 0</column>
+<column name="signbit_reg_984">1, 0, 1, 0</column>
+<column name="stream_in_24_data_0_payload_A">24, 0, 24, 0</column>
+<column name="stream_in_24_data_0_payload_B">24, 0, 24, 0</column>
+<column name="stream_in_24_data_0_sel_rd">1, 0, 1, 0</column>
+<column name="stream_in_24_data_0_sel_wr">1, 0, 1, 0</column>
+<column name="stream_in_24_data_0_state">2, 0, 2, 0</column>
+<column name="stream_in_24_last_V_0_payload_A">1, 0, 1, 0</column>
+<column name="stream_in_24_last_V_0_payload_B">1, 0, 1, 0</column>
+<column name="stream_in_24_last_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="stream_in_24_last_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="stream_in_24_last_V_0_state">2, 0, 2, 0</column>
+<column name="stream_in_24_last_V_s_reg_959">1, 0, 1, 0</column>
+<column name="stream_in_24_user_V_0_payload_A">1, 0, 1, 0</column>
+<column name="stream_in_24_user_V_0_payload_B">1, 0, 1, 0</column>
+<column name="stream_in_24_user_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="stream_in_24_user_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="stream_in_24_user_V_0_state">2, 0, 2, 0</column>
+<column name="stream_in_24_user_V_s_reg_954">1, 0, 1, 0</column>
+<column name="stream_out_24_data_1_payload_A">24, 0, 24, 0</column>
+<column name="stream_out_24_data_1_payload_B">24, 0, 24, 0</column>
+<column name="stream_out_24_data_1_sel_rd">1, 0, 1, 0</column>
+<column name="stream_out_24_data_1_sel_wr">1, 0, 1, 0</column>
+<column name="stream_out_24_data_1_state">2, 0, 2, 0</column>
+<column name="stream_out_24_last_V_1_payload_A">1, 0, 1, 0</column>
+<column name="stream_out_24_last_V_1_payload_B">1, 0, 1, 0</column>
+<column name="stream_out_24_last_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="stream_out_24_last_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="stream_out_24_last_V_1_state">2, 0, 2, 0</column>
+<column name="stream_out_24_user_V_1_payload_A">1, 0, 1, 0</column>
+<column name="stream_out_24_user_V_1_payload_B">1, 0, 1, 0</column>
+<column name="stream_out_24_user_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="stream_out_24_user_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="stream_out_24_user_V_1_state">2, 0, 2, 0</column>
+<column name="stream_in_24_last_V_s_reg_959">64, 32, 1, 0</column>
+<column name="stream_in_24_user_V_s_reg_954">64, 32, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_AXILiteS_AWVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_AWREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_AWADDR">in, 7, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WDATA">in, 32, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WSTRB">in, 4, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARADDR">in, 7, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RVALID">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RREADY">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RDATA">out, 32, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RRESP">out, 2, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BVALID">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BREADY">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BRESP">out, 2, s_axi, AXILiteS, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_none, color_convert, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_none, color_convert, return value</column>
+<column name="control">in, 1, ap_ctrl_none, color_convert, return value</column>
+<column name="ap_rst_n_control">in, 1, ap_ctrl_none, color_convert, return value</column>
+<column name="stream_in_24_TDATA">in, 24, axis, stream_in_24_data, pointer</column>
+<column name="stream_in_24_TVALID">in, 1, axis, stream_in_24_last_V, pointer</column>
+<column name="stream_in_24_TREADY">out, 1, axis, stream_in_24_last_V, pointer</column>
+<column name="stream_in_24_TLAST">in, 1, axis, stream_in_24_last_V, pointer</column>
+<column name="stream_in_24_TUSER">in, 1, axis, stream_in_24_user_V, pointer</column>
+<column name="stream_out_24_TDATA">out, 24, axis, stream_out_24_data, pointer</column>
+<column name="stream_out_24_TVALID">out, 1, axis, stream_out_24_last_V, pointer</column>
+<column name="stream_out_24_TREADY">in, 1, axis, stream_out_24_last_V, pointer</column>
+<column name="stream_out_24_TLAST">out, 1, axis, stream_out_24_last_V, pointer</column>
+<column name="stream_out_24_TUSER">out, 1, axis, stream_out_24_user_V, pointer</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">5.70</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'c3_c2_V_read'">read, 1.00, 1.00, -, -, -, s_axi, read, &apos;c3_c2_V&apos;, -, -, -, -, -</column>
+<column name="'OP2.V', color_convert/color_convert.cpp:48">sext, 0.00, 1.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'__Val2__', color_convert/color_convert.cpp:48">mul, 2.49, 3.49, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_18', color_convert/color_convert.cpp:48">sext, 0.00, 3.49, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'__Val2__', color_convert/color_convert.cpp:48">add, 2.21, 5.70, -, -, -, -, -, -, -, -, -, -, -</column>
+</table>
+</item>
+</section>
+</profile>

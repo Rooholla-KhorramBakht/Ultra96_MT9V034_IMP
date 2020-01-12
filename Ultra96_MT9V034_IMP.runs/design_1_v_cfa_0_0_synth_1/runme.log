@@ -1,0 +1,645 @@
+
+*** Running vivado
+    with args -log design_1_v_cfa_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_v_cfa_0_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_v_cfa_0_0.tcl -notrace
+Command: synth_design -top design_1_v_cfa_0_0 -part xczu3eg-sbva484-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21784 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 870.684 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_v_cfa_0_0' [d:/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_v_cfa_0_0/synth/design_1_v_cfa_0_0.vhd:77]
+	Parameter c_s_axis_video_data_width bound to: 8 - type: integer 
+	Parameter c_m_axis_video_data_width bound to: 8 - type: integer 
+	Parameter c_s_axis_video_tdata_width bound to: 8 - type: integer 
+	Parameter c_m_axis_video_tdata_width bound to: 24 - type: integer 
+	Parameter c_s_axis_video_format bound to: 12 - type: integer 
+	Parameter c_m_axis_video_format bound to: 2 - type: integer 
+	Parameter c_s_axis_video_tuser_width bound to: 1 - type: integer 
+	Parameter c_m_axis_video_tuser_width bound to: 1 - type: integer 
+	Parameter c_s_axi_addr_width bound to: 9 - type: integer 
+	Parameter c_s_axi_data_width bound to: 32 - type: integer 
+	Parameter c_s_axi_clk_freq_hz bound to: 100000000 - type: integer 
+	Parameter c_bayer_phase bound to: 3 - type: integer 
+	Parameter c_active_rows bound to: 480 - type: integer 
+	Parameter c_active_cols bound to: 752 - type: integer 
+	Parameter c_max_cols bound to: 752 - type: integer 
+	Parameter c_has_intc_if bound to: 0 - type: integer 
+	Parameter c_has_axi4_lite bound to: 0 - type: integer 
+	Parameter c_has_debug bound to: 0 - type: integer 
+	Parameter c_hor_filt bound to: 0 - type: integer 
+	Parameter c_fringe_tol bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'v_cfa' declared at 'd:/project_1/project_1.srcs/sources_1/bd/design_1/ipshared/85b2/hdl/v_cfa_v7_0_vh_rfs.vhd:7689' bound to instance 'U0' of component 'v_cfa' [d:/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_v_cfa_0_0/synth/design_1_v_cfa_0_0.vhd:181]
+INFO: [Synth 8-5811] Detected attribute (* ram_style  = "block" *) on module dpram 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-5811] Detected attribute (* ram_style  = "block" *) on module dpram 
+INFO: [Synth 8-5811] Detected attribute (* ram_style  = "block" *) on module dpram 
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_cfa_0_0' (30#1) [d:/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_v_cfa_0_0/synth/design_1_v_cfa_0_0.vhd:77]
+WARNING: [Synth 8-3331] design DELAY__parameterized28 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized28 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized27 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized27 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized26 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized26 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized25 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized25 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized21 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized21 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized24 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized24 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized23 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized23 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized16 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized16 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized22 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized22 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized17 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized17 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized20 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized20 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized19 has unconnected port q[0]
+WARNING: [Synth 8-3331] design DELAY__parameterized19 has unconnected port d[0]
+WARNING: [Synth 8-3331] design DELAY__parameterized18 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized18 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized1 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized1 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized15 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized15 has unconnected port d1
+WARNING: [Synth 8-3331] design get_round_addend__parameterized0 has unconnected port msb
+WARNING: [Synth 8-3331] design DELAY__parameterized13 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized13 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized12 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized12 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized11 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized11 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized10 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized10 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized9 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized9 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized8 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized8 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized4 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized4 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized7 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized7 has unconnected port d1
+WARNING: [Synth 8-3331] design get_round_addend has unconnected port msb
+WARNING: [Synth 8-3331] design DELAY__parameterized5 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized5 has unconnected port d1
+WARNING: [Synth 8-3331] design reciprocal has unconnected port sclr
+WARNING: [Synth 8-3331] design DELAY__parameterized6 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized6 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized14 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized14 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized3 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized3 has unconnected port d1
+WARNING: [Synth 8-3331] design interpolate_G has unconnected port green
+WARNING: [Synth 8-3331] design DELAY__parameterized2 has unconnected port q1
+WARNING: [Synth 8-3331] design DELAY__parameterized2 has unconnected port d1
+WARNING: [Synth 8-3331] design DELAY__parameterized0 has unconnected port q[0]
+WARNING: [Synth 8-3331] design DELAY__parameterized0 has unconnected port d[0]
+WARNING: [Synth 8-3331] design DELAY has unconnected port q[0]
+WARNING: [Synth 8-3331] design DELAY has unconnected port d[0]
+WARNING: [Synth 8-3331] design var_min_cfa has unconnected port clr_status
+WARNING: [Synth 8-3331] design axi4s_control has unconnected port test_pattern
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[31]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[30]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[29]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[28]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[27]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[26]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[25]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[24]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[23]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[22]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[21]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[20]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[19]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[18]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[17]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[16]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[15]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[14]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[13]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[12]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[11]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[10]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[9]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[8]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[7]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[6]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[3]
+WARNING: [Synth 8-3331] design cfa_top has unconnected port control[2]
+WARNING: [Synth 8-3331] design video_ctrl has unconnected port s_axi_awready
+WARNING: [Synth 8-3331] design video_ctrl has unconnected port s_axi_wready
+WARNING: [Synth 8-3331] design video_ctrl has unconnected port s_axi_bresp[1]
+WARNING: [Synth 8-3331] design video_ctrl has unconnected port s_axi_bresp[0]
+WARNING: [Synth 8-3331] design video_ctrl has unconnected port s_axi_bvalid
+WARNING: [Synth 8-3331] design video_ctrl has unconnected port s_axi_rdata[31]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 870.684 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 870.684 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 870.684 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_v_cfa_0_0/design_1_v_cfa_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_v_cfa_0_0/design_1_v_cfa_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [D:/project_1/project_1.runs/design_1_v_cfa_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/project_1/project_1.runs/design_1_v_cfa_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_v_cfa_0_0/design_1_v_cfa_0_0_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_v_cfa_0_0/design_1_v_cfa_0_0_clocks.xdc] for cell 'U0'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.227 . Memory (MB): peak = 1458.219 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1458.219 ; gain = 587.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1458.219 ; gain = 587.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  D:/project_1/project_1.runs/design_1_v_cfa_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1458.219 ; gain = 587.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5547] Trying to map ROM "sp_rom" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "sp_rom" into Block RAM due to explicit "ram_style" or "rom_style" specification
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1458.219 ; gain = 587.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\cfa_top_inst/intcore/var_min_cfa_instance /\active_to_G_delay_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\cfa_top_inst/intcore/var_min_cfa_instance /pix_matrix_G/\line_len_d_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\cfa_top_inst/intcore/var_min_cfa_instance /\active_to_RB_BR_delay_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\cfa_top_inst/intcore/var_min_cfa_instance /pix_matrix_RB/\line_len_d_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\cfa_top_inst/intcore/var_min_cfa_instance /\active_to_RB_G_delay_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/active_to_RB_G_delay_reg[2]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/active_to_OutMux_delay_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\cfa_top_inst/intcore/var_min_cfa_instance /\active_to_OutMux_delay_reg[1] )
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[39]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[38]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[37]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[36]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[35]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[34]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[33]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[32]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[31]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[30]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[29]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[28]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[27]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[26]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[25]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[24]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[23]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[22]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[21]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[20]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[19]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[18]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[17]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[16]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[15]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[14]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[13]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[12]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[11]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[10]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[9]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[8]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[7]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[6]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[5]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[4]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[3]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[2]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[1]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (data_outa_reg[0]) is unused and will be removed from module dpram.
+INFO: [Synth 8-3332] Sequential element (flops[3].reg_nw2/needs_delay.shift_register_reg[1][47]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[3].reg_nw2/needs_delay.shift_register_reg[1][46]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[3].reg_nw2/needs_delay.shift_register_reg[1][45]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[3].reg_nw2/needs_delay.shift_register_reg[1][44]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[3].reg_nw2/needs_delay.shift_register_reg[1][43]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[3].reg_nw2/needs_delay.shift_register_reg[1][42]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[3].reg_nw2/needs_delay.shift_register_reg[1][41]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[3].reg_nw2/needs_delay.shift_register_reg[1][40]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[4].reg_nw2/needs_delay.shift_register_reg[1][47]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[4].reg_nw2/needs_delay.shift_register_reg[1][46]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[4].reg_nw2/needs_delay.shift_register_reg[1][45]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[4].reg_nw2/needs_delay.shift_register_reg[1][44]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[4].reg_nw2/needs_delay.shift_register_reg[1][43]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[4].reg_nw2/needs_delay.shift_register_reg[1][42]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[4].reg_nw2/needs_delay.shift_register_reg[1][41]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[4].reg_nw2/needs_delay.shift_register_reg[1][40]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[5].reg_nw2/needs_delay.shift_register_reg[1][47]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[5].reg_nw2/needs_delay.shift_register_reg[1][46]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[5].reg_nw2/needs_delay.shift_register_reg[1][45]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[5].reg_nw2/needs_delay.shift_register_reg[1][44]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[5].reg_nw2/needs_delay.shift_register_reg[1][43]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[5].reg_nw2/needs_delay.shift_register_reg[1][42]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[5].reg_nw2/needs_delay.shift_register_reg[1][41]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[5].reg_nw2/needs_delay.shift_register_reg[1][40]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][47]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][46]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][45]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][44]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][43]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][42]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][41]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][40]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][39]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][38]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][37]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][36]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][35]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][34]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][33]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][32]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][31]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][30]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][29]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][28]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][27]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][26]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][25]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][24]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][23]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][22]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][21]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][20]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][19]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][18]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][17]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][16]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][15]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][14]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][13]) is unused and will be removed from module pix_matrix.
+INFO: [Synth 8-3332] Sequential element (flops[6].reg_nw2/needs_delay.shift_register_reg[1][12]) is unused and will be removed from module pix_matrix.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/video_cntrl/\GEN_HAS_IRQ.irq_reg )
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/active_to_G_delay_reg[2]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/active_to_RB_G_delay_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\cfa_top_inst/intcore/var_min_cfa_instance /sync_del_G/\delay_5_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\cfa_top_inst/intcore/var_min_cfa_instance /sync_del_RB_at_BR/\delay_5_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\cfa_top_inst/intcore/var_min_cfa_instance /sync_del_RB_at_G/\delay_5_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/get_RB/agdiff2_reg[9]' (FDRE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/get_RB/agdiff1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/get_RB/agdiff0_reg[9]' (FDRE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/get_RB/agdiff1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/get_RB/agdiff3_reg[9]' (FDRE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/get_RB/agdiff1_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\cfa_top_inst/intcore/var_min_cfa_instance /get_RB_at_BR/\get_RB/agdiff1_reg[9] )
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/get_RB/DRBh_reg[9]' (FDRE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/get_RB/DGh_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/get_RB/DBRh_reg[9]' (FDRE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/get_RB/DGh_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/get_RB/DGh_reg[9]' (FDRE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/get_RB/DBRv_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/get_RB/DRBv_reg[9]' (FDRE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/get_RB/DBRv_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/get_RB/DBRv_reg[9]' (FDRE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/get_RB/DGv_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\cfa_top_inst/intcore/var_min_cfa_instance /get_RB_at_G/\get_RB/DGv_reg[9] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1458.219 ; gain = 587.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/i_1/robust_chrominance.get_var_min_G/get_w1/block_ram.data_o_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/i_2/robust_chrominance.get_var_min_G/get_w2/block_ram.data_o_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/i_3/robust_chrominance.get_var_min_G/get_w3/block_ram.data_o_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/i_4/robust_chrominance.get_var_min_G/get_w4/block_ram.data_o_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/i_5/robust_chrominance.get_var_min_G/normalize/one_over/block_ram.data_o_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:10 . Memory (MB): peak = 1866.535 ; gain = 995.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5556] The block RAM ram_reg may be mapped as a cascade chain, because it is not timing critical.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:16 . Memory (MB): peak = 1923.328 ; gain = 1052.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[1][0]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[1][0]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[1][0]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[1][1]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[1][1]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[1][1]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[1][2]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[1][2]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[1][2]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[1][3]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[1][3]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[1][3]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[1][4]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[1][4]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[1][4]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[1][5]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[1][5]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[1][5]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[1][6]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[1][6]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[1][6]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[1][7]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[1][7]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[1][7]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][0]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[4].reg_nw2/needs_delay.shift_register_reg[1][32]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[1][0]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[2].reg_nw2/needs_delay.shift_register_reg[1][32]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][1]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[4].reg_nw2/needs_delay.shift_register_reg[1][33]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[1][1]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[2].reg_nw2/needs_delay.shift_register_reg[1][33]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][2]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[4].reg_nw2/needs_delay.shift_register_reg[1][34]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[1][2]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[2].reg_nw2/needs_delay.shift_register_reg[1][34]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][3]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[4].reg_nw2/needs_delay.shift_register_reg[1][35]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[1][3]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[2].reg_nw2/needs_delay.shift_register_reg[1][35]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][4]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[4].reg_nw2/needs_delay.shift_register_reg[1][36]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[1][4]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[2].reg_nw2/needs_delay.shift_register_reg[1][36]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][5]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[4].reg_nw2/needs_delay.shift_register_reg[1][37]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[1][5]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[2].reg_nw2/needs_delay.shift_register_reg[1][37]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][6]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[4].reg_nw2/needs_delay.shift_register_reg[1][38]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[1][6]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[2].reg_nw2/needs_delay.shift_register_reg[1][38]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[1][7]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[4].reg_nw2/needs_delay.shift_register_reg[1][39]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[1][7]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[2].reg_nw2/needs_delay.shift_register_reg[1][39]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_b/needs_delay.shift_register_reg[1][0]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[3].reg_nw2/needs_delay.shift_register_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_b/needs_delay.shift_register_reg[1][1]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[3].reg_nw2/needs_delay.shift_register_reg[1][25]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_b/needs_delay.shift_register_reg[1][2]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[3].reg_nw2/needs_delay.shift_register_reg[1][26]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_b/needs_delay.shift_register_reg[1][3]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[3].reg_nw2/needs_delay.shift_register_reg[1][27]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_b/needs_delay.shift_register_reg[1][4]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[3].reg_nw2/needs_delay.shift_register_reg[1][28]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_b/needs_delay.shift_register_reg[1][5]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[3].reg_nw2/needs_delay.shift_register_reg[1][29]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_b/needs_delay.shift_register_reg[1][6]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[3].reg_nw2/needs_delay.shift_register_reg[1][30]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_b/needs_delay.shift_register_reg[1][7]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[3].reg_nw2/needs_delay.shift_register_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[2][0]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[2][0]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[2][0]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[2][1]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[2][1]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[2][1]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[2][2]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[2][2]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[2][2]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[2][3]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[2][3]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[2][3]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[2][4]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[2][4]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[2][4]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][4]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[2][5]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[2][5]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[2][5]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[2][6]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[2][6]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[2][6]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_br/needs_delay.shift_register_reg[2][7]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/reg_center_pix/needs_delay.shift_register_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_ar/needs_delay.shift_register_reg[2][7]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_BR/delay_match_m_al/needs_delay.shift_register_reg[2][7]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/delay_match_green_input/needs_delay.shift_register_reg[2][7]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][0]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[5].reg_nw2/needs_delay.shift_register_reg[1][32]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[2][0]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_g_orig_c/needs_delay.shift_register_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][1]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[5].reg_nw2/needs_delay.shift_register_reg[1][33]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[2][1]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_g_orig_c/needs_delay.shift_register_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][2]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[5].reg_nw2/needs_delay.shift_register_reg[1][34]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[2][2]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_g_orig_c/needs_delay.shift_register_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][3]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[5].reg_nw2/needs_delay.shift_register_reg[1][35]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[2][3]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_g_orig_c/needs_delay.shift_register_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][4]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[5].reg_nw2/needs_delay.shift_register_reg[1][36]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[2][4]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_g_orig_c/needs_delay.shift_register_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][5]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[5].reg_nw2/needs_delay.shift_register_reg[1][37]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[2][5]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_g_orig_c/needs_delay.shift_register_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][6]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[5].reg_nw2/needs_delay.shift_register_reg[1][38]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[2][6]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_g_orig_c/needs_delay.shift_register_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_l/needs_delay.shift_register_reg[2][7]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[5].reg_nw2/needs_delay.shift_register_reg[1][39]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_r/needs_delay.shift_register_reg[2][7]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_g_orig_c/needs_delay.shift_register_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_b/needs_delay.shift_register_reg[2][0]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[4].reg_nw2/needs_delay.shift_register_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'U0/cfa_top_inst/intcore/var_min_cfa_instance/get_RB_at_G/delay_match_rb_orig_b/needs_delay.shift_register_reg[2][1]' (FDE) to 'U0/cfa_top_inst/intcore/var_min_cfa_instance/pix_matrix_orig/flops[4].reg_nw2/needs_delay.shift_register_reg[1][25]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4480] The timing for the instance U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/get_w1/block_ram.data_o_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/get_w1/block_ram.data_o_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/get_w3/block_ram.data_o_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/get_w3/block_ram.data_o_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/normalize/one_over/block_ram.data_o_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:22 . Memory (MB): peak = 1950.730 ; gain = 1080.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop cfa_top_inst/intcore/var_min_cfa_instance/active_to_G_delay_reg[11] is being inverted and renamed to cfa_top_inst/intcore/var_min_cfa_instance/active_to_G_delay_reg[11]_inv.
+INFO: [Synth 8-5365] Flop cfa_top_inst/intcore/var_min_cfa_instance/active_to_RB_BR_delay_reg[11] is being inverted and renamed to cfa_top_inst/intcore/var_min_cfa_instance/active_to_RB_BR_delay_reg[11]_inv.
+INFO: [Synth 8-5365] Flop cfa_top_inst/intcore/var_min_cfa_instance/active_to_RB_G_delay_reg[11] is being inverted and renamed to cfa_top_inst/intcore/var_min_cfa_instance/active_to_RB_G_delay_reg[11]_inv.
+INFO: [Synth 8-5365] Flop cfa_top_inst/intcore/var_min_cfa_instance/active_to_OutMux_delay_reg[11] is being inverted and renamed to cfa_top_inst/intcore/var_min_cfa_instance/active_to_OutMux_delay_reg[11]_inv.
+INFO: [Synth 8-5778] max_fanout handling on net intc_if[0] is sub-optimal because some of its loads are not in same hierarchy as its driver   
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1950.730 ; gain = 1080.047
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1950.730 ; gain = 1080.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 1950.730 ; gain = 1080.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 1950.730 ; gain = 1080.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 1950.730 ; gain = 1080.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 1950.730 ; gain = 1080.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |   264|
+|2     |DSP_ALU         |     8|
+|3     |DSP_A_B_DATA    |     8|
+|4     |DSP_C_DATA      |     5|
+|5     |DSP_C_DATA_1    |     3|
+|6     |DSP_MULTIPLIER  |     8|
+|7     |DSP_M_DATA      |     8|
+|8     |DSP_OUTPUT      |     8|
+|9     |DSP_PREADD      |     8|
+|10    |DSP_PREADD_DATA |     8|
+|11    |LUT1            |   120|
+|12    |LUT2            |  1039|
+|13    |LUT3            |   358|
+|14    |LUT4            |   517|
+|15    |LUT5            |   235|
+|16    |LUT6            |   564|
+|17    |MUXF7           |    16|
+|18    |RAM32M16        |     3|
+|19    |RAMB18E2_1      |     2|
+|20    |RAMB18E2_3      |     1|
+|21    |RAMB18E2_4      |     1|
+|22    |RAMB36E2_1      |     1|
+|23    |RAMB36E2_3      |     1|
+|24    |RAMB36E2_4      |     1|
+|25    |SRL16E          |   344|
+|26    |SRLC32E         |    60|
+|27    |FDRE            |  3813|
+|28    |FDSE            |    29|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 1950.730 ; gain = 1080.047
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 567 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:12 . Memory (MB): peak = 1950.730 ; gain = 492.512
+Synthesis Optimization Complete : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 1950.730 ; gain = 1080.047
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 291 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/get_w1/block_ram.data_o_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/cfa_top_inst/intcore/var_min_cfa_instance/get_G/robust_chrominance.get_var_min_G/get_w3/block_ram.data_o_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 8 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+252 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:01:32 . Memory (MB): peak = 1955.652 ; gain = 1084.969
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/project_1/project_1.runs/design_1_v_cfa_0_0_synth_1/design_1_v_cfa_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP d:/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_v_cfa_0_0/design_1_v_cfa_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 135 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/project_1/project_1.runs/design_1_v_cfa_0_0_synth_1/design_1_v_cfa_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_v_cfa_0_0_utilization_synth.rpt -pb design_1_v_cfa_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 1955.652 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 11 01:42:12 2019...

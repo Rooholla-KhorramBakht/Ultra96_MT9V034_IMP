@@ -1,0 +1,667 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan  9 23:06:29 2020
+# Process ID: 19360
+# Current directory: D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/design_1_wrapper.vds
+# Journal file: D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Ultra96_MT9V034_Basic/custom_ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+add_files: Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 879.703 ; gain = 591.332
+Command: synth_design -top design_1_wrapper -part xczu3eg-sbva484-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11608 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 879.703 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:22660]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:22660]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_intc_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_intc_0_0' (2#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:982]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1CA5Z32' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:2667]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1CA5Z32' (3#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:2667]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_O7FAN0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:4420]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (4#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_us_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_0' requires 34 connections, but only 33 given [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:4547]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_O7FAN0' (5#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:4420]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1F69D31' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:4583]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (6#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_us_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_1' requires 40 connections, but only 39 given [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:4734]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1F69D31' (7#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:4583]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (8#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_arready' does not match port width (2) of module 'design_1_xbar_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:1554]
+WARNING: [Synth 8-689] width (128) of port connection 's_axi_rdata' does not match port width (256) of module 'design_1_xbar_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:1571]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_rlast' does not match port width (2) of module 'design_1_xbar_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:1572]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_rresp' does not match port width (4) of module 'design_1_xbar_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:1574]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_rvalid' does not match port width (2) of module 'design_1_xbar_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:1575]
+WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_0' requires 78 connections, but only 74 given [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:1506]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_0_0' (9#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:982]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_1_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:1583]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1FDLJBY' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1FDLJBY' (10#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:2939]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_NZRVUN' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:3064]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_NZRVUN' (11#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:3064]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1GFU8IL' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:3196]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_cc_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_cc_0' (12#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_cc_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_cc' of module 'design_1_auto_cc_0' requires 42 connections, but only 40 given [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:3359]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1GFU8IL' (13#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:3196]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_N7UN3W' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:3402]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_cc_1' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_cc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_cc_1' (14#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_cc_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_cc' of module 'design_1_auto_cc_1' requires 42 connections, but only 40 given [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:3565]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_N7UN3W' (15#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:3402]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_1DJ53Q0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:3608]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_cc_2' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_cc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_cc_2' (16#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_cc_2_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_cc' of module 'design_1_auto_cc_2' requires 42 connections, but only 39 given [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:3767]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_1DJ53Q0' (17#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:3608]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_Q1492X' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:3809]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_cc_3' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_cc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_cc_3' (18#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_cc_3_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_cc' of module 'design_1_auto_cc_3' requires 42 connections, but only 39 given [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:3968]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_Q1492X' (19#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:3809]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_HS4N6K' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:4010]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (20#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (21#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_HS4N6K' (22#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:4010]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (23#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_1_0' (24#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:1583]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_vdma_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_axi_vdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_vdma_0_0' (25#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_axi_vdma_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_vdma_0' of module 'design_1_axi_vdma_0_0' requires 67 connections, but only 60 given [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:576]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_register_slice_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_axis_register_slice_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_register_slice_0_0' (26#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_axis_register_slice_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_switch_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_axis_switch_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_switch_0_0' (27#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_axis_switch_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_switch_1_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_axis_switch_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_switch_1_0' (28#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_axis_switch_1_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axis_switch_1' of module 'design_1_axis_switch_1_0' requires 38 connections, but only 34 given [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:681]
+INFO: [Synth 8-6157] synthesizing module 'design_1_cam_line_status_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_cam_line_status_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_cam_line_status_0_0' (29#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_cam_line_status_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_color_convert_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_color_convert_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_color_convert_0_0' (30#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_color_convert_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:756]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_0' (31#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_image_processing_ip_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_image_processing_ip_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_image_processing_ip_0_0' (32#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_image_processing_ip_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'image_processing_ip_0' of module 'design_1_image_processing_ip_0_0' requires 24 connections, but only 21 given [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:764]
+INFO: [Synth 8-6157] synthesizing module 'design_1_pixel_pack_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_pixel_pack_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_pixel_pack_0_0' (33#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_pixel_pack_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_0' (34#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_27M' of module 'design_1_proc_sys_reset_0_0' requires 10 connections, but only 6 given [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:818]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_100M_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_100M_0' (35#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps8_0_100M' of module 'design_1_rst_ps8_0_100M_0' requires 10 connections, but only 7 given [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:825]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_150M_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_rst_ps8_0_150M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_150M_0' (36#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_rst_ps8_0_150M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps8_0_150M' of module 'design_1_rst_ps8_0_150M_0' requires 10 connections, but only 7 given [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:833]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_0' (37#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_1' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_util_vector_logic_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_1' (38#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_util_vector_logic_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_1_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_util_vector_logic_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_1_0' (39#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_util_vector_logic_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_v_cfa_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_v_cfa_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_v_cfa_0_0' (40#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_v_cfa_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_v_vid_in_axi4s_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_v_vid_in_axi4s_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_v_vid_in_axi4s_0_0' (41#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_v_vid_in_axi4s_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'v_vid_in_axi4s_0' of module 'design_1_v_vid_in_axi4s_0_0' requires 28 connections, but only 19 given [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:865]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_xlconcat_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (42#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_xlconcat_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (43#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (44#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/.Xil/Vivado-19360-DESKTOP-HPB531F/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' requires 91 connections, but only 88 given [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:891]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'cam_line_status_0'. This will prevent further optimization [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:716]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:756]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'util_vector_logic_1'. This will prevent further optimization [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:845]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'util_vector_logic_0'. This will prevent further optimization [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:841]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'util_vector_logic_2'. This will prevent further optimization [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:848]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'v_vid_in_axi4s_0'. This will prevent further optimization [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:865]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'proc_sys_reset_27M'. This will prevent further optimization [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:818]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (45#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (46#1) [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_HS4N6K has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_HS4N6K has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[39]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[38]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[37]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[36]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[35]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[34]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[33]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[32]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[17]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[16]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[15]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[14]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[13]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[12]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[11]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[10]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[9]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[8]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_araddr[7]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[39]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[38]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[37]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[36]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[35]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[34]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[33]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[32]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[31]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[30]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[29]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[28]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[27]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[26]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[25]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[24]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[23]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[22]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[21]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[20]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[19]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[18]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[17]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[16]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[15]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[14]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[13]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[12]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[11]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[10]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[9]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[8]
+WARNING: [Synth 8-3331] design m05_couplers_imp_Q1492X has unconnected port S_AXI_awaddr[7]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[39]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[38]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[37]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[36]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[35]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[34]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[33]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[32]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[17]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[16]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[15]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[14]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[13]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[12]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[11]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[10]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[9]
+WARNING: [Synth 8-3331] design m04_couplers_imp_1DJ53Q0 has unconnected port S_AXI_araddr[8]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 879.703 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 879.703 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 879.703 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_0/design_1_v_vid_in_axi4s_0_0/design_1_v_vid_in_axi4s_0_0_in_context.xdc] for cell 'design_1_i/v_vid_in_axi4s_0'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_0/design_1_v_vid_in_axi4s_0_0/design_1_v_vid_in_axi4s_0_0_in_context.xdc] for cell 'design_1_i/v_vid_in_axi4s_0'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_in_context.xdc] for cell 'design_1_i/axi_vdma_0'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_in_context.xdc] for cell 'design_1_i/axi_vdma_0'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0/design_1_axi_intc_0_0_in_context.xdc] for cell 'design_1_i/axi_intc_0'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0/design_1_axi_intc_0_0_in_context.xdc] for cell 'design_1_i/axi_intc_0'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_v_cfa_0_0/design_1_v_cfa_0_0/design_1_v_cfa_0_0_in_context.xdc] for cell 'design_1_i/v_cfa_0'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_v_cfa_0_0/design_1_v_cfa_0_0/design_1_v_cfa_0_0_in_context.xdc] for cell 'design_1_i/v_cfa_0'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_150M_0/design_1_rst_ps8_0_150M_0/design_1_rst_ps8_0_150M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_150M'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_150M_0/design_1_rst_ps8_0_150M_0/design_1_rst_ps8_0_150M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_150M'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_100M'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_100M'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_1/design_1_util_vector_logic_0_1/design_1_util_vector_logic_1_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_1'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_1/design_1_util_vector_logic_0_1/design_1_util_vector_logic_1_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_1'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_1_0/design_1_util_vector_logic_1_0/design_1_util_vector_logic_1_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_2'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_1_0/design_1_util_vector_logic_1_0/design_1_util_vector_logic_1_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_2'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/xbar'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/xbar'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/xbar'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_27M'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_27M'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/design_1_xlconcat_0_0/design_1_xlconcat_0_0_in_context.xdc] for cell 'design_1_i/xlconcat_0'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/design_1_xlconcat_0_0/design_1_xlconcat_0_0_in_context.xdc] for cell 'design_1_i/xlconcat_0'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_cam_line_status_0_0/design_1_cam_line_status_0_0/design_1_cam_line_status_0_0_in_context.xdc] for cell 'design_1_i/cam_line_status_0'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_cam_line_status_0_0/design_1_cam_line_status_0_0/design_1_cam_line_status_0_0_in_context.xdc] for cell 'design_1_i/cam_line_status_0'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'design_1_i/ila_0'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'design_1_i/ila_0'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_pixel_pack_0_0/design_1_pixel_pack_0_0/design_1_pixel_pack_0_0_in_context.xdc] for cell 'design_1_i/pixel_pack_0'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_pixel_pack_0_0/design_1_pixel_pack_0_0/design_1_pixel_pack_0_0_in_context.xdc] for cell 'design_1_i/pixel_pack_0'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_color_convert_0_0/design_1_color_convert_0_0/design_1_color_convert_0_0_in_context.xdc] for cell 'design_1_i/color_convert_0'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_color_convert_0_0/design_1_color_convert_0_0/design_1_color_convert_0_0_in_context.xdc] for cell 'design_1_i/color_convert_0'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_axis_register_slice_0_0/design_1_axis_register_slice_0_0/design_1_axis_register_slice_0_0_in_context.xdc] for cell 'design_1_i/axis_register_slice_0'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_axis_register_slice_0_0/design_1_axis_register_slice_0_0/design_1_axis_register_slice_0_0_in_context.xdc] for cell 'design_1_i/axis_register_slice_0'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_image_processing_ip_0_0/design_1_image_processing_ip_0_0/design_1_image_processing_ip_0_0_in_context.xdc] for cell 'design_1_i/image_processing_ip_0'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_image_processing_ip_0_0/design_1_image_processing_ip_0_0/design_1_image_processing_ip_0_0_in_context.xdc] for cell 'design_1_i/image_processing_ip_0'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_axis_switch_0_0/design_1_axis_switch_0_0/design_1_axis_switch_0_0_in_context.xdc] for cell 'design_1_i/axis_switch_0'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_axis_switch_0_0/design_1_axis_switch_0_0/design_1_axis_switch_0_0_in_context.xdc] for cell 'design_1_i/axis_switch_0'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_axis_switch_1_0/design_1_axis_switch_1_0/design_1_axis_switch_1_0_in_context.xdc] for cell 'design_1_i/axis_switch_1'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_axis_switch_1_0/design_1_axis_switch_1_0/design_1_axis_switch_1_0_in_context.xdc] for cell 'design_1_i/axis_switch_1'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0/design_1_xlconstant_0_0_in_context.xdc] for cell 'design_1_i/xlconstant_0'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0/design_1_xlconstant_0_0_in_context.xdc] for cell 'design_1_i/xlconstant_0'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_3/design_1_auto_cc_3/design_1_auto_cc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/m05_couplers/auto_cc'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_3/design_1_auto_cc_3/design_1_auto_cc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/m05_couplers/auto_cc'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_2/design_1_auto_cc_2/design_1_auto_cc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/m04_couplers/auto_cc'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_2/design_1_auto_cc_2/design_1_auto_cc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/m04_couplers/auto_cc'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_1/design_1_auto_cc_1/design_1_auto_cc_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/m03_couplers/auto_cc'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_1/design_1_auto_cc_1/design_1_auto_cc_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/m03_couplers/auto_cc'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0/design_1_auto_cc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/m02_couplers/auto_cc'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0/design_1_auto_cc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/m02_couplers/auto_cc'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/s00_couplers/auto_ds'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/s00_couplers/auto_ds'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/s00_couplers/auto_pc'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/s00_couplers/auto_pc'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1/design_1_auto_us_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s01_couplers/auto_us'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1/design_1_auto_us_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s01_couplers/auto_us'
+Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s00_couplers/auto_us'
+Finished Parsing XDC File [d:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s00_couplers/auto_us'
+Parsing XDC File [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/constrs_1/new/pins.xdc]
+Finished Parsing XDC File [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/constrs_1/new/pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.srcs/constrs_1/new/pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1481.984 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/axi_vdma_0' at clock pin 'm_axi_mm2s_aclk' is different from the actual clock period '6.666', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'design_1_i/axis_switch_0' at clock pin 'aclk' is different from the actual clock period '6.666', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'design_1_i/axis_switch_1' at clock pin 'aclk' is different from the actual clock period '6.666', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '7.000' specified during out-of-context synthesis of instance 'design_1_i/color_convert_0' at clock pin 'ap_clk' is different from the actual clock period '6.666', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '7.000' specified during out-of-context synthesis of instance 'design_1_i/pixel_pack_0' at clock pin 'ap_clk' is different from the actual clock period '6.666', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1481.984 ; gain = 602.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1481.984 ; gain = 602.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/v_vid_in_axi4s_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_vdma_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_intc_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/v_cfa_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_ps8_0_150M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_ps8_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_vector_logic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_vector_logic_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_vector_logic_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_1/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/proc_sys_reset_27M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/cam_line_status_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ila_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/pixel_pack_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/color_convert_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axis_register_slice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/image_processing_ip_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axis_switch_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axis_switch_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_1/m05_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_1/m04_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_1/m03_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_1/m02_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_1/s00_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_1/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_0/s01_couplers/auto_us. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_interconnect_0/s00_couplers/auto_us. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1481.984 ; gain = 602.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1481.984 ; gain = 602.281
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1481.984 ; gain = 602.281
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/zynq_ultra_ps_e_0/pl_clk0' to pin 'design_1_i/zynq_ultra_ps_e_0/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/zynq_ultra_ps_e_0/pl_clk1' to pin 'design_1_i/zynq_ultra_ps_e_0/bbstub_pl_clk1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/zynq_ultra_ps_e_0/pl_clk2' to pin 'design_1_i/zynq_ultra_ps_e_0/bbstub_pl_clk2/O'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1865.863 ; gain = 986.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 1866.160 ; gain = 986.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 1867.910 ; gain = 988.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 1867.910 ; gain = 988.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 1867.910 ; gain = 988.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 1867.910 ; gain = 988.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 1867.910 ; gain = 988.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 1867.910 ; gain = 988.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 1867.910 ; gain = 988.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |design_1_xbar_0                  |         1|
+|2     |design_1_auto_us_0               |         1|
+|3     |design_1_auto_us_1               |         1|
+|4     |design_1_xbar_1                  |         1|
+|5     |design_1_auto_cc_0               |         1|
+|6     |design_1_auto_cc_1               |         1|
+|7     |design_1_auto_cc_2               |         1|
+|8     |design_1_auto_cc_3               |         1|
+|9     |design_1_auto_ds_0               |         1|
+|10    |design_1_auto_pc_0               |         1|
+|11    |design_1_axi_intc_0_0            |         1|
+|12    |design_1_axi_vdma_0_0            |         1|
+|13    |design_1_axis_register_slice_0_0 |         1|
+|14    |design_1_axis_switch_0_0         |         1|
+|15    |design_1_axis_switch_1_0         |         1|
+|16    |design_1_cam_line_status_0_0     |         1|
+|17    |design_1_color_convert_0_0       |         1|
+|18    |design_1_ila_0_0                 |         1|
+|19    |design_1_image_processing_ip_0_0 |         1|
+|20    |design_1_pixel_pack_0_0          |         1|
+|21    |design_1_proc_sys_reset_0_0      |         1|
+|22    |design_1_rst_ps8_0_100M_0        |         1|
+|23    |design_1_rst_ps8_0_150M_0        |         1|
+|24    |design_1_util_vector_logic_0_0   |         1|
+|25    |design_1_util_vector_logic_0_1   |         1|
+|26    |design_1_util_vector_logic_1_0   |         1|
+|27    |design_1_v_cfa_0_0               |         1|
+|28    |design_1_v_vid_in_axi4s_0_0      |         1|
+|29    |design_1_xlconcat_0_0            |         1|
+|30    |design_1_xlconstant_0_0          |         1|
+|31    |design_1_zynq_ultra_ps_e_0_0     |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |design_1_auto_cc_0               |     1|
+|2     |design_1_auto_cc_1               |     1|
+|3     |design_1_auto_cc_2               |     1|
+|4     |design_1_auto_cc_3               |     1|
+|5     |design_1_auto_ds_0               |     1|
+|6     |design_1_auto_pc_0               |     1|
+|7     |design_1_auto_us_0               |     1|
+|8     |design_1_auto_us_1               |     1|
+|9     |design_1_axi_intc_0_0            |     1|
+|10    |design_1_axi_vdma_0_0            |     1|
+|11    |design_1_axis_register_slice_0_0 |     1|
+|12    |design_1_axis_switch_0_0         |     1|
+|13    |design_1_axis_switch_1_0         |     1|
+|14    |design_1_cam_line_status_0_0     |     1|
+|15    |design_1_color_convert_0_0       |     1|
+|16    |design_1_ila_0_0                 |     1|
+|17    |design_1_image_processing_ip_0_0 |     1|
+|18    |design_1_pixel_pack_0_0          |     1|
+|19    |design_1_proc_sys_reset_0_0      |     1|
+|20    |design_1_rst_ps8_0_100M_0        |     1|
+|21    |design_1_rst_ps8_0_150M_0        |     1|
+|22    |design_1_util_vector_logic_0_0   |     1|
+|23    |design_1_util_vector_logic_0_1   |     1|
+|24    |design_1_util_vector_logic_1_0   |     1|
+|25    |design_1_v_cfa_0_0               |     1|
+|26    |design_1_v_vid_in_axi4s_0_0      |     1|
+|27    |design_1_xbar_0                  |     1|
+|28    |design_1_xbar_1                  |     1|
+|29    |design_1_xlconcat_0_0            |     1|
+|30    |design_1_xlconstant_0_0          |     1|
+|31    |design_1_zynq_ultra_ps_e_0_0     |     1|
+|32    |IBUF                             |    11|
+|33    |IOBUF                            |     2|
++------+---------------------------------+------+
+
+Report Instance Areas: 
++------+-----------------------+------------------------------+------+
+|      |Instance               |Module                        |Cells |
++------+-----------------------+------------------------------+------+
+|1     |top                    |                              |  3949|
+|2     |  design_1_i           |design_1                      |  3936|
+|3     |    axi_interconnect_0 |design_1_axi_interconnect_0_0 |   868|
+|4     |      s00_couplers     |s00_couplers_imp_O7FAN0       |   100|
+|5     |      s01_couplers     |s01_couplers_imp_1F69D31      |   214|
+|6     |    axi_interconnect_1 |design_1_axi_interconnect_1_0 |  1726|
+|7     |      m02_couplers     |m02_couplers_imp_1GFU8IL      |   102|
+|8     |      m03_couplers     |m03_couplers_imp_N7UN3W       |    98|
+|9     |      m04_couplers     |m04_couplers_imp_1DJ53Q0      |   102|
+|10    |      m05_couplers     |m05_couplers_imp_Q1492X       |   102|
+|11    |      s00_couplers     |s00_couplers_imp_HS4N6K       |   519|
++------+-----------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 1867.910 ; gain = 988.207
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1867.910 ; gain = 385.926
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 1867.914 ; gain = 988.207
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 11 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+121 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 1909.758 ; gain = 1030.055
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Ultra96_MT9V034_Basic/Ultra96_MT9V034_Basic.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1910.070 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  9 23:07:39 2020...

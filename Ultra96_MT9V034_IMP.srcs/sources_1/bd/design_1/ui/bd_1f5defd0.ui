@@ -1,0 +1,79 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port cam_pixel_clk -pg 1 -y 740 -defaultsOSRD
+preplace port config_i2c -pg 1 -y 90 -defaultsOSRD
+preplace portBus frame_valid -pg 1 -y 840 -defaultsOSRD
+preplace portBus line_valid -pg 1 -y 820 -defaultsOSRD
+preplace portBus pixel_data -pg 1 -y 720 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 12 -y 350 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 14 -y 120 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 8 -y 700 -defaultsOSRD
+preplace inst axis_switch_0 -pg 1 -lvl 8 -y 530 -defaultsOSRD
+preplace inst cam_line_status_0 -pg 1 -lvl 1 -y 810 -defaultsOSRD
+preplace inst rst_ps8_0_150M -pg 1 -lvl 2 -y -170 -defaultsOSRD
+preplace inst v_cfa_0 -pg 1 -lvl 4 -y 520 -defaultsOSRD
+preplace inst axi_intc_0 -pg 1 -lvl 5 -y 100 -defaultsOSRD
+preplace inst axis_switch_1 -pg 1 -lvl 10 -y 410 -defaultsOSRD
+preplace inst color_convert_0 -pg 1 -lvl 6 -y 790 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 5 -y -80 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -y 910 -defaultsOSRD
+preplace inst axis_register_slice_0 -pg 1 -lvl 7 -y 550 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 2 -y 1020 -defaultsOSRD
+preplace inst util_vector_logic_2 -pg 1 -lvl 2 -y 780 -defaultsOSRD
+preplace inst rst_ps8_0_100M -pg 1 -lvl 2 -y 90 -defaultsOSRD
+preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 3 -y 730 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 13 -y 380 -defaultsOSRD
+preplace inst pixel_pack_0 -pg 1 -lvl 11 -y 340 -defaultsOSRD
+preplace inst axi_interconnect_1 -pg 1 -lvl 4 -y 50 -defaultsOSRD
+preplace inst image_processing_ip_0 -pg 1 -lvl 9 -y 610 -defaultsOSRD
+preplace inst proc_sys_reset_27M -pg 1 -lvl 2 -y 620 -defaultsOSRD
+preplace netloc axis_switch_0_M00_AXIS 1 8 2 2850 350 NJ
+preplace netloc axis_switch_0_M01_AXIS 1 8 1 N
+preplace netloc slowest_sync_clk_0_1 1 0 3 20J 710 550 520 950
+preplace netloc pixel_pack_0_stream_out_32 1 11 1 4040
+preplace netloc v_vid_in_axi4s_0_video_out 1 3 1 1310
+preplace netloc axi_vdma_0_s2mm_introut 1 4 9 1670J -160 NJ -160 NJ -160 NJ -160 NJ -160 NJ -160 NJ -160 NJ -160 4420
+preplace netloc Op1_0_1 1 0 2 30J 900 550
+preplace netloc axi_interconnect_1_M05_AXI 1 4 6 1610 310 NJ 310 NJ 310 NJ 310 NJ 310 3310J
+preplace netloc image_processing_ip_0_OUTPUT_STREAM1 1 9 1 3330
+preplace netloc axi_interconnect_1_M01_AXI 1 4 1 1660
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 1 14 570J -10 NJ -10 1270 -170 1630 330 NJ 330 NJ 330 NJ 330 NJ 330 3290J 260 3640J 220 4050 210 NJ 210 4780 240 5400
+preplace netloc axi_interconnect_1_M04_AXI 1 4 4 1650J 190 NJ 190 N 190 2550
+preplace netloc zynq_ultra_ps_e_0_IIC_0 1 14 1 N
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 12 1 N
+preplace netloc proc_sys_reset_27M_peripheral_reset 1 2 1 910
+preplace netloc zynq_ultra_ps_e_0_pl_clk1 1 1 14 550 510 960 510 1300 420 N 420 1930 470 2320 470 2570 420 2860 420 3340 290 3630 200 4070 200 4460 200 4790 250 5390
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 3 12 1280 -190 NJ -190 NJ -190 NJ -190 NJ -190 NJ -190 NJ -190 NJ -190 NJ -190 NJ -190 NJ -190 5410
+preplace netloc util_vector_logic_0_Res 1 2 1 970
+preplace netloc rst_ps8_0_150M_interconnect_aresetn 1 2 11 NJ -150 1260J -180 1610J -150 NJ -150 NJ -150 NJ -150 NJ -150 NJ -150 NJ -150 NJ -150 4450
+preplace netloc rst_ps8_0_100M_peripheral_aresetn 1 0 12 30 190 NJ 190 910J 130 1280 270 1660 320 NJ 320 NJ 320 NJ 320 NJ 320 3280J 210 NJ 210 4030J
+preplace netloc axis_switch_1_M00_AXIS 1 10 1 3670
+preplace netloc axi_interconnect_1_M02_AXI 1 4 2 1650 10 1940
+preplace netloc v_cfa_0_video_out 1 4 2 N 520 1920
+preplace netloc xlconstant_0_dout 1 8 1 2880J
+preplace netloc xlconcat_0_dout 1 4 2 1670 -10 1940
+preplace netloc rst_ps8_0_100M_interconnect_aresetn 1 2 2 910J -20 1260
+preplace netloc axi_vdma_0_mm2s_introut 1 4 9 1640J -170 NJ -170 NJ -170 NJ -170 NJ -170 NJ -170 NJ -170 NJ -170 4430
+preplace netloc axi_interconnect_0_M00_AXI 1 13 1 4760
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 14 560 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 3300J 270 3620J 190 NJ 190 NJ 190 4770J 230 5410
+preplace netloc axi_interconnect_1_M03_AXI 1 4 7 1640 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 3650J
+preplace netloc cam_line_status_0_link_state 1 1 2 560 840 NJ
+preplace netloc util_vector_logic_2_Res 1 2 1 920J
+preplace netloc util_vector_logic_1_Res 1 2 1 980
+preplace netloc Op2_0_1 1 0 2 20J 910 570
+preplace netloc rst_ps8_0_150M_peripheral_aresetn 1 2 11 930 90 1290 430 N 430 1910 570 2300 630 2540 410 2870 410 3320 280 3660 230 4060J 220 4440
+preplace netloc color_convert_0_stream_out_24 1 6 1 2310
+preplace netloc axi_interconnect_1_M00_AXI 1 4 8 1620J -180 NJ -180 NJ -180 NJ -180 NJ -180 NJ -180 NJ -180 4080
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 12 1 N
+preplace netloc axi_intc_0_irq 1 5 9 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 4770
+preplace netloc axis_register_slice_0_M_AXIS 1 7 1 2560
+preplace netloc vid_data_0_1 1 0 3 NJ 720 NJ 720 940J
+levelinfo -pg 1 0 450 740 1120 1460 1790 2120 2430 2710 3080 3480 3850 4250 4610 5090 5430 -top -270 -bot 1080
+",
+}
+{
+   da_clkrst_cnt: "10",
+   da_zynq_ultra_ps_e_cnt: "1",
+}

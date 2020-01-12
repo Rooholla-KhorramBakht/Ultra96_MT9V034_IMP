@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'stream_in_24.data.V' (pixel_pack/pixel_pack.cpp:28)." projectName="pixel_pack" solutionName="solution1" date="2019-10-11T11:41:21.777+0330" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'stream_out_32.data.V' (pixel_pack/pixel_pack.cpp:28)." projectName="pixel_pack" solutionName="solution1" date="2019-10-11T11:41:21.736+0330" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] pixel_pack/pixel_pack.cpp:50: variable-indexed range selection may cause suboptimal QoR." projectName="pixel_pack" solutionName="solution1" date="2019-10-11T11:41:21.593+0330" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

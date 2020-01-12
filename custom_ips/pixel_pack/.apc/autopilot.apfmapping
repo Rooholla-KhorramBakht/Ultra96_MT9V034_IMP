@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="pixel_pack.cpp" path="D:\project_1\custom_ips\pixel_pack\pixel_pack.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="pixel_pack_test.cpp" path="D:\project_1\custom_ips\pixel_pack\pixel_pack_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

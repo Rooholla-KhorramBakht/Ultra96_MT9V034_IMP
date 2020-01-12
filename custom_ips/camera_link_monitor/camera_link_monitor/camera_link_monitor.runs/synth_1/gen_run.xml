@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xczu3eg-sbva484-1-e" LaunchTime="1570780069">
+  <File Type="PA-TCL" Name="cam_line_status.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="cam_line_status_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="cam_line_status_reports.tcl"/>
+  <File Type="RDS-RDS" Name="cam_line_status.vds"/>
+  <File Type="RDS-UTIL" Name="cam_line_status_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="cam_line_status_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="cam_line_status.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="cam_line_status_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="cam_line_status_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/WDT.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../my_pulse_genereator/my_pulse_genereator.srcs/sources_1/new/WDT.v"/>
+        <Attr Name="ImportTime" Val="1562834503"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/col_counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../my_pulse_genereator/my_pulse_genereator.srcs/sources_1/new/col_counter.v"/>
+        <Attr Name="ImportTime" Val="1562832495"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/row_counter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../my_pulse_genereator/my_pulse_genereator.srcs/sources_1/new/row_counter.v"/>
+        <Attr Name="ImportTime" Val="1562831610"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/cam_line_status.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../my_pulse_genereator/my_pulse_genereator.srcs/sources_1/new/cam_line_status.v"/>
+        <Attr Name="ImportTime" Val="1562837813"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="cam_line_status"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
