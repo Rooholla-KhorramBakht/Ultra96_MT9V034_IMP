@@ -45,10 +45,10 @@
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_intc_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_util_vector_logic_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_v_cfa_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_vdma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_xlconstant_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_v_cfa_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_rst_ps8_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_xlconstant_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_rst_ps8_0_150M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_proc_sys_reset_0_0"/>
